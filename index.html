@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>codedamn Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+</head>
+
+<body>
+    <section id="hero">
+        <div class="content-wrapper">
+            <h1 class="hero-title">Eventually</h1>
+            <p class="hero-description">
+                A simple template for telling the world when you'll launch your next big thing. Brought to you by HTML5
+                up.
+            </p>
+            <div class="signup">
+                <input type="text" placeholder="Email Address">
+                <button class="btnSignUp">Click Here</button>
+            </div>
+            <span class="displayMessage"></span>
+            <div class="footer-icons">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="credits">
+                <i class="fa-regular fa-copyright"></i> | credits: Unsplash + HTML5 UP
+            </div>
+        </div>
+    </section>
+<script>
+    const message = document.querySelector('.displayMessage');
+    const signupbtn = document.querySelector('.btnSignUp');
+
+    signupbtn.addEventListener("click", () => {
+        message.innerHTML = "Thank You!!";
+    });
+
+
+</script>
+</body>
+
+</html>
